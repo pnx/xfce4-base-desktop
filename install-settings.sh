@@ -11,12 +11,12 @@ function replace_vars {
 		| sed "s~{{.*XFCE4_THEME.*}}~${XFCE4_THEME}~" \
 		| sed "s~{{.*XFCE4_ICON.*}}~${XFCE4_ICON}~" \
 		| sed "s~{{.*XFCE4_CURSOR.*}}~${XFCE4_CURSOR}~" \
-		| sed "s~{{.*XFCE4_PANEL_CLOCK_FORMAT.*}}~${XFCE4_PANEL_CLOCK_FORMAT}~"
-		| sed "s~{{.*LIGHTDM_BACKGROUND.*}}~${LIGHTDM_BACKGROUND}~"
-		| sed "s~{{.*LIGHTDM_THEME.*}}~${LIGHTDM_THEME}~"
-		| sed "s~{{.*LIGHTDM_ICON_THEME.*}}~${LIGHTDM_ICON_THEME}~"
-		| sed "s~{{.*LIGHTDM_CURSOR_THEME.*}}~${LIGHTDM_CURSOR_THEME}~"
-		| sed "s~{{.*LIGHTDM_CURSOR_SIZE.*}}~${LIGHTDM_CURSOR_SIZE}~"
+		| sed "s~{{.*XFCE4_PANEL_CLOCK_FORMAT.*}}~${XFCE4_PANEL_CLOCK_FORMAT}~" \
+		| sed "s~{{.*LIGHTDM_BACKGROUND.*}}~${LIGHTDM_BACKGROUND}~" \
+		| sed "s~{{.*LIGHTDM_THEME.*}}~${LIGHTDM_THEME}~" \
+		| sed "s~{{.*LIGHTDM_ICON_THEME.*}}~${LIGHTDM_ICON_THEME}~" \
+		| sed "s~{{.*LIGHTDM_CURSOR_THEME.*}}~${LIGHTDM_CURSOR_THEME}~" \
+		| sed "s~{{.*LIGHTDM_CURSOR_SIZE.*}}~${LIGHTDM_CURSOR_SIZE}~" \
 		| sed "s~{{.*LIGHTDM_FONT.*}}~${LIGHTDM_FONT}~"
 }
 
